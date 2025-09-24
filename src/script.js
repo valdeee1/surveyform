@@ -15,8 +15,22 @@ form.addEventListener("submit", function (event) {
     };
 
     console.log("Käyttäjän tiedot:", userData);
+    
+    sendtoBackend(userData);
 
     // Ohjataan käyttäjä toiselle sivulle
     window.location.href = "thankyou.html"; window.location.href = "thankyou.html";
 
 });
+
+function sendtoBackend(userData){
+    fetch("http:/localhost/collect",{
+        method: "POST",
+        body: JSON.stringify(userData),
+        headers: {
+            "Content-type": "application/json; charset=UTF-8"
+        }
+    })
+    .then((response) => response.json())
+    .then((json) => console.log(json));
+}
