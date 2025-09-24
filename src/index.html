@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <img src="hello.jpg" width="200" height="200">
+    <header><h1>Tyytyväisyyskysely</h1></header>
+
     <div id="container">
         <header>
-            <h1>Tyytyväisyyskysely</h1>
-            <p1>
+            <p>
                 Vastaajan tiedot: <br>
-            </p1>
+            </p>
         </header>
         <main>
-            <form action="#" method="post">
+            <form id="surveyForm">
                 <label for="fname">Etunimi:</label><br>
-                <input type="text"name="fname" ><br>
+                <input type="text" name="fname"><br>
                 <label for="lname">Sukunimi:</label><br>
-                <input type="text"name="lname"><br>
+                <input type="text" name="lname"><br>
                 <label for="address">Osoite:</label><br>
-                <input type="text"name="address"><br>
+                <input type="text" name="address"><br>
                 <label for="puhelin">Puhelinnumero:</label><br>
-                <input type="text"name="puhelin"><br>
+                <input type="text" name="puhelin"><br>
+                <br>
+                <br>
+                <label for="palaute">Kirjoita palaute:</label><br>
+                <input type="text" name="palaute" id="feedback"><br><br>
+                <button type="submit" id="submit">Lähetä</button>
             </form>
         </main>
-</body>
     </div>
 <footer>
     <p>&copy; 2023 Survey Form</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

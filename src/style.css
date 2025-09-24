@@ -1,4 +1,19 @@
-.container {
-    margin: auto;
+body {
+    text-align: center;
+}
+#container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #f9f9f9;
 
+}
+#feedback{
+    height: 200px;
+    width: 500px;
+}
+#submit{
+    height: 25px;
+    width: 100px;
 }
