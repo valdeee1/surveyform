@@ -19,12 +19,12 @@ form.addEventListener("submit", function (event) {
     sendtoBackend(userData);
 
     // Ohjataan käyttäjä toiselle sivulle
-    window.location.href = "thankyou.html"; window.location.href = "thankyou.html";
 
 });
-
+// Lähetetään tiedot palvelimelle
 function sendtoBackend(userData){
-    fetch("http:/localhost/collect",{
+    console.log("läheteään backendiin");
+    fetch("http://127.0.0.1:8000/collect/",{
         method: "POST",
         body: JSON.stringify(userData),
         headers: {

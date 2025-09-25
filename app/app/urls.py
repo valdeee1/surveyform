@@ -1,3 +1,5 @@
+from survey import views
+
 """
 URL configuration for app project.
 
@@ -17,6 +19,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+#Reitit views-tiedostoon
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('collect/', views.collect),
 ]
